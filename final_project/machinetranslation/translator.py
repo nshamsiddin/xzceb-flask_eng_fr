@@ -1,7 +1,9 @@
+import sys
 import os
 from ibm_watson import LanguageTranslatorV3
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 from dotenv import load_dotenv
+sys.path.append(os.path.join(os.path.dirname(__file__), "..", ".."))
 
 load_dotenv()
 
